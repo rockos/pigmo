@@ -1,0 +1,88 @@
+<form name="body_head" action="/" method="POST">
+	<div> <%= posts[0].scrhead %></div>
+	<%= posts[0].comment %>
+	<hr class="head_under">
+</form>
+
+
+<FORM name="main_form" method="post" action="/scr101" >
+
+
+<TABLE width="640" align="center" border="0">
+<TR>
+<TD>
+	
+<BR>
+<TABLE width="640" align="center" border="0">
+<COL width="660" align="center">
+<COL width="" align="center">
+<TR>
+<TD>
+	<FIELDSET style="width:650" name="noname">
+	<LEGEND align="left"><B><FONT>Operation status</FONT></B></legend>
+	<TABLE width="" border="0">
+		<COL width="510" align="center">
+		<COL width="" align="center">
+		<TR>
+		<TD>
+		<TABLE width="500"  border="1">
+			<COL width="" align="center">
+			<COL width="" align="center">
+			<COL width="" align="center">
+			<TR>
+			<TH><FONT>AREA</FONT></TH>
+			<TH><FONT>CURRENT</FONT></TH>
+			<TH><FONT>UPDATE</FONT></TH>
+		</TR>
+		<TR>
+		<TD><FONT size="3" color="red">
+		<B><%= posts[1].area %></B></FONT>
+		</TD>
+		<TD><FONT size="+1" color="blue"><%= posts[1].stat %></FONT>
+		</TD>
+		<TD>
+		<SELECT name="sel01" tabindex="1" >
+			<OPTION value="a">active</OPTION>
+			<OPTION value="p">pause</OPTION>
+		</SELECT>
+		</TD>
+		</TR>
+
+		<TR>
+		<TD><FONT size="3">
+		<B><%= posts[2].area %></B></FONT></TD>
+		<TD><FONT size="+1" color="blue"><%= posts[2].stat %></FONT>
+		</TD>
+		<TD>
+		<SELECT name="sel2" tabindex="2" >
+			<OPTION value="a">active</OPTION>
+			<OPTION value="p">pause</OPTION>
+		</SELECT>
+		</TD>
+		</TR>
+
+		<TR>
+		<TD><FONT size="3"><B><%= posts[3].area%></B></FONT></TD>
+		<TD><FONT size="+1" color="blue">
+			 <b><%= posts[3].stat %></b></FONT></TD>
+		<TD>
+		<SELECT name="sel02" tabindex="3" >
+			<OPTION value="a">active</OPTION>
+			<OPTION value="p">pause</OPTION>
+		</SELECT>
+		</TD>
+		</TR>
+		</TABLE>
+		</TD>
+		<TD rowspan="2" valign="bottom">
+		<INPUT type="submit" class="update" 
+		style="width:100;height:30px" value="UPDATE" tabindex="11" >
+		</TD>
+		</TR>
+		</TABLE>
+		</FIELDSET>
+	</TD>
+</TR>
+</TABLE>
+
+</FORM>
