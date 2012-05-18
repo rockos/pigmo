@@ -1,0 +1,10 @@
+{"dummy": "hogehoge"
+,"title": "Orijinal screen"
+,"scrhead": "This screen display initial data.","comment":"node.js+express"
+,"tab":[
+{"area": "Moutain railway", "stat": "there are smoking area."}
+,{"area": "Korea Air line", "stat": "this is no smoking area."}
+,{"area": "Central Sea transport", "stat": "office & utilities."}
+
+]
+}

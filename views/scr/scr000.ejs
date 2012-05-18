@@ -1,8 +1,7 @@
 <form name="body_head" action="/" method="POST">
-	<div> <%= scrhead %></div>
-	<%= comment %>
+	<div> <%= posts.scrhead %></div>
+	<%= posts.comment %>
 	<hr class="head_under">
-<a href="/">home</a><br>
 </form>
 
 
@@ -34,26 +33,45 @@
 			<TH><FONT>AREA</FONT></TH>
 			<TH><FONT>CURRENT</FONT></TH>
 			<TH><FONT>UPDATE</FONT></TH>
-			</TR>
-
-<!-- Repeat untill "tab" object is not empty -->
-		<% for (var i = 0; i < tab.length; i++) { %>
-			<TR>
-			<TD><FONT size="3" color="red">
-			<B><%= tab[i].area %></B></FONT>
-			</TD>
-			<TD><FONT size="+1" color="blue">
-				  <%= tab[i].stat %></FONT>
-			</TD>
-			<TD>
-			<SELECT name="sel01" tabindex="1" >
+		</TR>
+		<TR>
+		<TD><FONT size="3" color="red">
+		<B><%= posts[0].scrhead %></B></FONT>
+		</TD>
+		<TD><FONT size="+1" color="blue"><%= posts.comment %></FONT>
+		</TD>
+		<TD>
+		<SELECT name="sel01" tabindex="1" >
 			<OPTION value="a">active</OPTION>
 			<OPTION value="p">pause</OPTION>
-			</SELECT>
-			</TD>
-			</TR>
-		<% } %>
+		</SELECT>
+		</TD>
+		</TR>
 
+		<TR>
+		<TD><FONT size="3">
+		<B><%= posts.scrhead %></B></FONT></TD>
+		<TD><FONT size="+1" color="blue">aaaa</FONT>
+		</TD>
+		<TD>
+		<SELECT name="sel2" tabindex="2" >
+			<OPTION value="a">active</OPTION>
+			<OPTION value="p">pause</OPTION>
+		</SELECT>
+		</TD>
+		</TR>
+
+		<TR>
+		<TD><FONT size="3"><B>bbbb</B></FONT></TD>
+		<TD><FONT size="+1" color="blue">
+			 <b>vvvv</b></FONT></TD>
+		<TD>
+		<SELECT name="sel02" tabindex="3" >
+			<OPTION value="a">active</OPTION>
+			<OPTION value="p">pause</OPTION>
+		</SELECT>
+		</TD>
+		</TR>
 		</TABLE>
 		</TD>
 		<TD rowspan="2" valign="bottom">

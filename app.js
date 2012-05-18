@@ -5,7 +5,8 @@
 
 var express = require('express')
     , routes = require('./routes')
-    , scr = require('./routes/scr/scr');
+    , controller = require('./controller/controller');
+
 
 
 var app = module.exports = express.createServer();
@@ -32,9 +33,8 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
-//app.get('/scr100', routes.scr);
-app.get('/scr101', scr.scrget);
-app.post('/scr101', scr.scrpost);
+app.get('/scr/:id', controller.scrget);
+app.post('/scr/:id', controller.scrpost);
 
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
